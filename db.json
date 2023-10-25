@@ -4,7 +4,10 @@
       "name": "sản phẩm 1 ",
       "price": "100",
       "description": "Mô tả 1",
-      "id": 1
+      "id": 1,
+      "imageURL": "",
+      "image": "https://picsum.photos/200/100",
+      "quantity": "10"
     },
     {
       "name": "Sản phẩm 2",

@@ -4,8 +4,10 @@
             <tr>
                 <th scope="col">STT</th>
                 <th scope="col">Tên sản  phẩm</th>
+                <th scope="col">Ảnh sản  phẩm</th>
                 <th scope="col">Giá sản phẩm</th>
                 <th scope="col">Mô tả</th>
+                <th scope="col">Số lượng</th>
                 <th scope="col">Chức năng</th>
             </tr>
         </thead>
@@ -13,8 +15,12 @@
             <tr *ngFor="let product of products; index as i">
                 <td>{{i +1}}</td>
                 <td>{{product.name}}</td>
+                <td>
+                    <img [src]="product.image" alt="">
+                </td>
                 <td>{{product.price}}</td>
                 <td>{{product.description}}</td>
+                <td>{{product.quantity}}</td>
                 <td width="200">
                     <button class="btn btn-danger" (click)="removeProduct(product.id!)">Xóa</button>
                     <button class="btn btn-success ms-2" routerLink="/admin/product/{{product.id}}/edit">Sửa</button>

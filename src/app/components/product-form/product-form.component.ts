@@ -13,8 +13,10 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductFormComponent {
   productForm = this.formBuilder.group({
     name: [''],
+    image: [''],
     price: [0],
-    description: ['']
+    description: [''],
+    quantity: [0]
   })
   product!: IProduct;
   mode: "create" | "update" = "create";

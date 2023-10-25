@@ -1,1 +1,15 @@
-<p>home-page works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-center" *ngFor="let product of products">
+            <a [routerLink]="['/product', product.id]" class="text-decoration-none">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title">{{product.name}}</h2>
+                        <p class="card-text">{{product.price}}</p>
+                        <i class="card-text">{{product.description}}</i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
